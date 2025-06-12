@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SemTalk</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>SGEAG: Semantic-guided emotional-aware gesture generation from audio</h1>
+
+  <div class="authors">
+    Jenifer Kalafatovich<sup>1*</sup>, Seong-Whan Lee<sup>1*</sup>
+  </div>
+  <div class="affiliations">
+    1 Department of Artificial Intelligence, Korea University, Seoul, Korea <br>
+    † means corresponding author.
+  </div>
+
+  <div class="tags">
+    <span class="tag-button">arXiv</span>
+    <span class="tag-button">Github</span>
+  </div>
+
+
+  <div class="image-section">
+    <img src="images/gestures.jpg" alt=" " style="max-width: 100%;">
+    <div class="caption">
+     SGEAG generated whole-body gestures that are influenced by semantic of the speech and emotion 
+    </div>
+  </div>
+
+  <div class="abstract">
+    <h2>Abstract</h2>
+    <p>
+      Gestures and facial expressions are essential for effective communication, and are influenced by different characteristics of the speech audio including speech content, speaker style and more. These affect whole-body gestures differently; while facial gestures are strongly correlated speech content, specifically with phonemes; body gestures are related to speech semantics and rhythm. This work proposes a method for generating semantically-guided whole-body gestures from speech, including body and hand movements; and facial expressions. We use separate Residual Vector Quantized Variational Autoencoder (RQ-VAE) networks to model latent representations for the face, hands, upper body, and lower body to maintain their dynamics. We design an audio2face module that generates facial expressions driven by speech content features; and an audio2body module that synthesizes body gestures using semantic and rhythmic features, enhanced by a semantic-guided mechanism (SGM), which captures feature importance. Experiments on the BEAT2 dataset demonstrate that our method achieves state-of-the-art performance in quantitative metrics and human perception rating.
+    </p>
+  </div>
+
+  <div class="abstract">
+    <h2>Video</h2>
+  </div>
+ 
+ <div class="video-section">
+    <!-- Local video file -->
+    <video controls width="100%">
+      <source src="video/demo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- YouTube embed (uncomment this instead if you want to use a YouTube link) -->
+    <!--
+    <iframe width="100%" height="480" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+            frameborder="0" allowfullscreen></iframe>
+    -->
+  </div>
+
+  <div class="subtext">
+    <h2>Method</h2>
+    <p>
+<i> Architecture overview of SGEAG:</i> Our method comprises two modules: (1) Audio2face module, where facial expressions are generated using content features; and (2) Audio2body module, where body gestures are generated using semantic and rhythm features through a semantic-guided mechanism that enables the network to learn feature importance and infuse semantic information into the generated gestures. A style adaptation method is employed to reflect emotion and style features in both face and body gestures separately. 
+    </p>
+  </div>
+
+  <div class="image-section">
+    <img src="images/net1_2.jpg" alt=" " style="max-width: 100%;">
+  </div>
+
+
+  <div class="subtext">
+    <h2>Results</h2>
+    <p>
+We conduct a quantitative analysis and compare our method with various state-of-the-art approaches across different metrics. Our method outperforms the existing methods in multiple metrics. Additionally, a qualitative comparison is performed between the proposed model and state-of-the-art methods. We show motion sequences for two speech audio samples, specifically for surprise and neutral emotion. While EMAGE generates motion sequences that capture some semantic concepts present in the audio, it fails to produce gestures that effectively convey emotional expressions. In contrast, our method generates gestures that not only reflect semantic concepts but also accurately represent the associated emotions. 
+</p>
+  <div class="image-section">
+    <img src="images/result1_3.jpg" alt=" " style="max-width: 100%;">
+  </div>
+  <p>  
+We further generate motion sequences for different emotional states. Emotions with high arousal, such as anger, happiness, and surprise, tend to result in broad upper-body motion sequences, in contrast to low-arousal emotions.
+</p>
+  <div class="image-section">
+    <img src="images/result2_2.jpg" alt=" " style="max-width: 100%;">
+  </div>
+  <p>  
+We also showcase the generated motion sequences for different semantic conceptsdemonstrating the effectiveness of our method in reflecting semantic information on the generated body gestures.
+</p>
+  <div class="image-section">
+    <img src="images/semantic_gest1.jpg" alt=" " style="max-width: 100%;">
+  </div>    
+    
+    
+  </div>
+
+
+</body>
+</html>

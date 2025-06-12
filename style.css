@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  h1 {
+    text-align: center;
+  }
+  .authors {
+    text-align: center;
+    font-size: 14px;
+  }
+  .affiliations {
+    text-align: center;
+    font-size: 13px;
+    color: gray;
+  }
+  .tags {
+    text-align: center;
+    margin: 10px 0;
+  }
+  .tag-button {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    padding: 6px 12px;
+    margin: 2px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .video-section, .image-section {
+    text-align: center;
+    margin: 30px 0;
+  }
+  .caption {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+  }
+  .abstract {
+    text-align: justify;
+    margin-top: 30px;
+    margin-left: 100px;
+     margin-right: 100px;
+  }
+  .abstract h2 {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .subtext {
+    text-align: justify;
+    margin-top: 30px;
+    margin-left: 20px;
+     margin-right: 20px;
+  }    
+  .subtext h2 {
+    text-align: center;
+    margin-top: 30px;
+  }
